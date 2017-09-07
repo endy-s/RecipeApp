@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
+import styles from "./styles"
 
 class Title extends React.Component {
     static PropTypes = {
@@ -7,7 +8,7 @@ class Title extends React.Component {
     }
 
     static defaultProps = {
-            children: "Children not defined"
+        children: "Children not defined"
     }
 
     componentWillReceiveProps(nextProps) {
@@ -26,16 +27,5 @@ class Title extends React.Component {
         )
     }
 }
-const styles = StyleSheet.create({
-    container: {
-        paddingLeft: 40,
-        backgroundColor: "blue",
-    },
-    titleStyle: {
-        fontSize: 24,
-        color: "white",
-    },
-})
-
 
 export default Title
